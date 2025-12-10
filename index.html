@@ -17,21 +17,23 @@
             margin-top: 40px;
         }
 
-        .project-list a {
-    /* Giữ nguyên các thuộc tính khác */
-    font-size: 24px; /* Giảm kích thước font một chút */
-    margin: 15px; /* Giảm khoảng cách giữa các liên kết */
-    display: inline-block;
-    font-weight: bold;
-    }
+/* === SỬA LỖI CSS TẠI ĐÂY (Áp dụng Flexbox cho danh sách) === */
+        .project-list {
+            text-align: center;
+            margin-top: 30px;
+            display: flex; /* Bật chế độ Flexbox */
+            flex-wrap: wrap; /* Cho phép xuống dòng */
+            justify-content: center; /* Căn giữa */
+        }
 
         .project-list a {
-    text-decoration: none;
-    font-size: 30px;
-    margin: 25px 15px; /* Thử điều chỉnh margin (trên/dưới: 25px, trái/phải: 15px) */
-    /* BỎ display: inline-block; */
-    font-weight: bold;
-    }
+            text-decoration: none;
+            font-size: 30px;
+            margin: 15px 25px; /* Điều chỉnh margin: trên/dưới 15px, trái/phải 25px */
+            font-weight: bold;
+        }
+/* ========================================================= */
+
 
         .blue { color: #0066FF; }
         .green { color: #11CC22; }
@@ -103,9 +105,7 @@
     <a href="#neura" class="blue">NEURA</a>
     <a href="#camp" class="blue">CAMP HAVEN</a>
 
-    <br><br>
-
-    <a href="#rayls" class="blue">RAYLS</a>
+        <a href="#rayls" class="blue">RAYLS</a>
     <a href="#stable" class="blue">STABLE</a>
     <a href="#miden" class="blue">MIDEN</a>
 </div>
@@ -129,20 +129,20 @@
 
 <div id="pharos" class="detail-section">
     <div class="detail-header">DỰ ÁN 1 — PHAROS</div>
-    
-    <div class="link-title">Check rank</div>
+    
+    <div class="link-title">Check rank</div>
     <a class="project-link" href="https://pharoshub.xyz/" target="_blank">
-      https://pharoshub.xyz/
+      https://pharoshub.xyz/
             </a>
-  
+  
     <div class="link-title">Trang chủ</div>
     <a class="project-link" href="https://testnet.pharosnetwork.xyz/experience" target="_blank">
-      https://testnet.pharosnetwork.xyz/experience
+      https://testnet.pharosnetwork.xyz/experience
             </a>
-    
+    
     <div class="link-title">Liquidity</div>
     <a class="project-link" href="https://testnet.bitverse.zone/app/?perpsLiquidity=BTC-POOL" target="_blank">
-        https://testnet.bitverse.zone/app/?perpsLiquidity=BTC-POOL
+        https://testnet.bitverse.zone/app/?perpsLiquidity=BTC-POOL
             </a>
 
     <div class="link-title">Tele</div>
@@ -191,19 +191,17 @@
 </div>
 
 
-
-
 <div id="linera" class="detail-section">
     <div class="detail-header">DỰ ÁN 3 — LINERA</div>
-    
+    
     <div class="link-title">Hướng dẫn</div>
     <a class="project-link" href="https://x.com/fabriziodegeno/status/1969014452004516205" target="_blank">
-        https://x.com/fabriziodegeno/status/1969014452004516205
+        https://x.com/fabriziodegeno/status/1969014452004516205
             </a>
-    
-    <div class="link-title">Website</div>
+    
+    <div class="link-title">Website</div>
     <a class="project-link" href="https://portal.linera.net/" target="_blank">
-        https://portal.linera.net/
+        https://portal.linera.net/
             </a>
     <div class="link-title">Discord</div>
     <a class="project-link" href="" target="_blank">
@@ -215,7 +213,6 @@
 
     <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
 
- 
 </div>
 
 
@@ -224,19 +221,15 @@
 
     <div class="link-title">Trang chủ - Điểm danh</div>
     <a class="project-link" href="https://camphaven.xyz/home" target="_blank">
-        https://camphaven.xyz/home
+        https://camphaven.xyz/home
             </a>
-    
+    
     <div class="link-title">Complete Zealy quests</div>
     <a class="project-link" href="https://zealy.io/cw/datahaven/questboard" target="_blank">
-        https://zealy.io/cw/datahaven/questboard
+        https://zealy.io/cw/datahaven/questboard
             </a>
     <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
 </div>
-
-
-
-
 
 
 <div id="soso" class="detail-section">
@@ -245,7 +238,7 @@
     <div class="link-title">Website</div>
     <a class="project-link" href="" target="_blank">
             </a>
-    
+    
     <div class="link-title">Twitter</div>
     <a class="project-link" href="" target="_blank">
             </a>
@@ -272,10 +265,6 @@
     <a class="project-link" href="" target="_blank">
             </a>
 </div>
-
-
-
-
 
 </body>
 </html>
