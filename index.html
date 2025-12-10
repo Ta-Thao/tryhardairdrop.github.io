@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Các Dự Án</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background: #fdfdfd;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-size: 36px;
+        color: #2b2b6f;
+    }
+
+    .section {
+        margin: 40px 0;
+    }
+
+    .line {
+        border-top: 2px dashed red;
+        width: 80%;
+        margin: 25px auto;
+    }
+
+    .items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .blue { color: #0d60ff; }
+    .green { color: #12c012; }
+    .status {
+        display: block;
+        font-size: 14px;
+        color: gray;
+        margin-top: 4px;
+        font-weight: normal;
+    }
+
+    /* Checklist */
+    .item-box {
+        text-align: center;
+        min-width: 150px;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.4);
+        margin-right: 5px;
+    }
+
+    /* Nút trở về đầu trang */
+    .back-top {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        background: #0ea800;
+        color: white;
+        padding: 14px 20px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    /* VÍ */
+    .wallet {
+        margin-top: 40px;
+        font-size: 22px;
+    }
+    .wallet a {
+        color: #0d40ff;
+        word-break: break-all;
+        text-decoration: none;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>CÁC DỰ ÁN</h1>
+
+
+<!-- ====================== NHÓM 1 ====================== -->
+<div class="section items">
+    <div class="item-box blue"><input type="checkbox" data-id="PHAROS"> PHAROS <span class="status" id="PHAROS-status"></span></div>
+    <div class="item-box blue"><input type="checkbox" data-id="NEURA"> NEURA <span class="status" id="NEURA-status"></span></div>
+    <div class="item-box blue"><input type="checkbox" data-id="ARC"> ARC <span class="status" id="ARC-status"></span></div>
+    <div class="item-box blue"><input type="checkbox" data-id="RAYLS"> RAYLS <span class="status" id="RAYLS-status"></span></div>
+    <div class="item-box blue"><input type="checkbox" data-id="STABLE"> STABLE <span class="status" id="STABLE-status"></span></div>
+    <div class="item-box blue"><input type="checkbox" data-id="MIDEN"> MIDEN <span class="status" id="MIDEN-status"></span></div>
+</div>
+
+<div class="line"></div>
+
+
+<!-- ================
