@@ -1,107 +1,175 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Các Dự Án</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        background: #fdfdfd;
-    }
+    <meta charset="UTF-8">
+    <title>Tổng hợp Dự Án</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            padding: 20px;
+            margin: 0;
+        }
 
-    h1 {
-        margin-top: 30px;
-        font-size: 36px;
-        color: #2b2b6f;
-    }
+        h1, h2 {
+            text-align: center;
+            color: #1E2A78;
+            margin-top: 40px;
+        }
 
-    .section {
-        margin: 40px 0;
-    }
+        .project-list {
+            text-align: center;
+            margin-top: 30px;
+        }
 
-    .line {
-        border-top: 2px dashed red;
-        width: 80%;
-        margin: 25px auto;
-    }
+        .project-list a {
+            text-decoration: none;
+            font-size: 30px;
+            margin: 25px;
+            display: inline-block;
+            font-weight: bold;
+        }
 
-    .items {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 40px;
-        font-size: 22px;
-        font-weight: bold;
-    }
+        .blue { color: #0066FF; }
+        .green { color: #11CC22; }
+        .divider {
+            border-bottom: 2px dashed red;
+            width: 90%;
+            margin: 25px auto;
+        }
 
-    .blue { color: #0d60ff; }
-    .green { color: #12c012; }
-    .status {
-        display: block;
-        font-size: 14px;
-        color: gray;
-        margin-top: 4px;
-        font-weight: normal;
-    }
+        /* Chi tiết dự án */
+        .detail-section {
+            margin-top: 80px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+        }
 
-    /* Checklist */
-    .item-box {
-        text-align: center;
-        min-width: 150px;
-    }
+        .detail-header {
+            background: #FFBC52;
+            color: #0033A0;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+        }
 
-    input[type="checkbox"] {
-        transform: scale(1.4);
-        margin-right: 5px;
-    }
+        .link-title {
+            color: #008000;
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
 
-    /* Nút trở về đầu trang */
-    .back-top {
-        position: fixed;
-        right: 30px;
-        bottom: 30px;
-        background: #0ea800;
-        color: white;
-        padding: 14px 20px;
-        border-radius: 40px;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: bold;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    }
+        .project-link {
+            font-size: 20px;
+            margin-left: 30px;
+            color: #0056D6;
+            display: block;
+            margin-top: 5px;
+        }
 
-    /* VÍ */
-    .wallet {
-        margin-top: 40px;
-        font-size: 22px;
-    }
-    .wallet a {
-        color: #0d40ff;
-        word-break: break-all;
-        text-decoration: none;
-    }
-</style>
+        .step-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 25px;
+        }
+
+        .back-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: green;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
 </head>
-
 <body>
 
+<!-- ============================= -->
+<!--        DANH SÁCH DỰ ÁN        -->
+<!-- ============================= -->
 <h1>CÁC DỰ ÁN</h1>
 
+<div class="divider"></div>
 
-<!-- ====================== NHÓM 1 ====================== -->
-<div class="section items">
-    <div class="item-box blue"><input type="checkbox" data-id="PHAROS"> PHAROS <span class="status" id="PHAROS-status"></span></div>
-    <div class="item-box blue"><input type="checkbox" data-id="NEURA"> NEURA <span class="status" id="NEURA-status"></span></div>
-    <div class="item-box blue"><input type="checkbox" data-id="ARC"> ARC <span class="status" id="ARC-status"></span></div>
-    <div class="item-box blue"><input type="checkbox" data-id="RAYLS"> RAYLS <span class="status" id="RAYLS-status"></span></div>
-    <div class="item-box blue"><input type="checkbox" data-id="STABLE"> STABLE <span class="status" id="STABLE-status"></span></div>
-    <div class="item-box blue"><input type="checkbox" data-id="MIDEN"> MIDEN <span class="status" id="MIDEN-status"></span></div>
+<div class="project-list">
+    <a href="#pharos" class="blue">PHAROS</a>
+    <a href="#neura" class="blue">NEURA</a>
+    <a href="#arc" class="blue">ARC</a>
+
+    <br><br>
+
+    <a href="#rayls" class="blue">RAYLS</a>
+    <a href="#stable" class="blue">STABLE</a>
+    <a href="#miden" class="blue">MIDEN</a>
 </div>
 
-<div class="line"></div>
+<div class="divider"></div>
+
+<div class="project-list">
+    <a href="#edgen" class="green">EDGEN</a>
+    <a href="#soso" class="green">SOSO</a>
+    <a href="#linera" class="green">LINERA</a>
+</div>
+
+<div class="divider"></div>
+
+<div class="project-list">
+    <a href="#rialo" class="blue">RIALO</a>
+    <a href="#ritual" class="blue">RITUAL</a>
+</div>
+
+<a href="#" class="back-top">VỀ ĐẦU TRANG</a>
 
 
-<!-- ================
+<!-- ============================= -->
+<!--         CHI TIẾT NEURA        -->
+<!-- ============================= -->
+<div id="neura" class="detail-section">
+    <div class="detail-header">DỰ ÁN 2 — NEURA</div>
+
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="https://x.com/Neura_io" target="_blank">
+        https://x.com/Neura_io
+    </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="https://discord.com/invite/VrVZmw9EHe" target="_blank">
+        https://discord.com/invite/VrVZmw9EHe
+    </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="https://t.me/neuraofficial" target="_blank">
+        https://t.me/neuraofficial
+    </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối Twitter, Tele, Discord</p>
+
+    <div class="step-title">BƯỚC 1 — TRANG HƯỚNG DẪN</div>
+    <a class="project-link" href="https://docs.neuraprotocol.io/" target="_blank">
+        https://docs.neuraprotocol.io/
+    </a>
+
+    <div class="step-title">BƯỚC 2 — TRANG LEADERBOARD</div>
+    <a class="project-link" href="https://neuraverse.neuraprotocol.io/?section=leaderboard" target="_blank">
+        https://neuraverse.neuraprotocol.io/?section=leaderboard
+    </a>
+
+    <div class="step-title">BƯỚC 3 — TRANG FAUCET</div>
+    <a class="project-link" href="https://neuraverse.neuraprotocol.io/faucet" target="_blank">
+        https://neuraverse.neuraprotocol.io/faucet
+    </a>
+</div>
+
+<!-- ============================= -->
+<!--  (BẠN MUỐN MÌNH THÊM CÁC DỰ ÁN KHÁC?) -->
+<!-- ============================= -->
+
+</body>
+</html>
