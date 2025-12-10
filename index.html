@@ -18,17 +18,21 @@
         }
 
         .project-list {
-            text-align: center;
-            margin-top: 30px;
-        }
+    text-align: center;
+    margin-top: 30px;
+    /* THÊM 3 DÒNG SAU */
+    display: flex; /* Kích hoạt chế độ Flexbox */
+    flex-wrap: wrap; /* Cho phép các mục tự động xuống hàng nếu hết chỗ */
+    justify-content: center; /* Căn giữa các mục trong Flexbox */
+}
 
         .project-list a {
-            text-decoration: none;
-            font-size: 30px;
-            margin: 25px;
-            display: inline-block;
-            font-weight: bold;
-        }
+    text-decoration: none;
+    font-size: 30px;
+    margin: 25px 15px; /* Thử điều chỉnh margin (trên/dưới: 25px, trái/phải: 15px) */
+    /* BỎ display: inline-block; */
+    font-weight: bold;
+}
 
         .blue { color: #0066FF; }
         .green { color: #11CC22; }
