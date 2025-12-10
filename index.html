@@ -4,96 +4,144 @@
     <meta charset="UTF-8">
     <title>Tổng hợp Dự Án</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            padding: 20px;
-            margin: 0;
-        }
+        /* ========================================================= */
+/* === CƠ SỞ & FONT CHỮ ==================================== */
+/* ========================================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f6; /* Nền xám nhạt */
+    padding: 30px;
+    margin: 0;
+}
 
-        h1, h2 {
-            text-align: center;
-            color: #1E2A78;
-            margin-top: 40px;
-        }
+h1 {
+    text-align: center;
+    color: #1E2A78;
+    margin-top: 20px;
+    font-size: 36px;
+    border-bottom: 3px solid #FFBC52;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
 
 /* ========================================================= */
-/* === ĐÃ SỬA LỖI CSS TẠI ĐÂY (Áp dụng Flexbox cho danh sách) === */
+/* === DANH SÁCH DỰ ÁN (Navigation) ========================= */
 /* ========================================================= */
-        .project-list {
-            text-align: center;
-            margin-top: 30px;
-            display: flex; /* Bật chế độ Flexbox */
-            flex-wrap: wrap; /* Cho phép xuống dòng */
-            justify-content: center; /* Căn giữa */
-        }
+.project-list {
+    margin-top: 30px;
+    display: flex; /* Bật chế độ Flexbox */
+    flex-wrap: wrap; /* Cho phép xuống dòng */
+    justify-content: center; /* Căn giữa các mục */
+    gap: 15px; /* Khoảng cách giữa các thẻ */
+    padding: 10px 0;
+}
 
-        .project-list a {
-            text-decoration: none;
-            font-size: 30px;
-            margin: 15px 25px; /* Điều chỉnh margin */
-            font-weight: bold;
-        }
+.project-list a {
+    text-decoration: none;
+    font-size: 18px; /* Kích thước vừa phải hơn */
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px; /* Bo tròn góc */
+    transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển động */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Ngăn tên dự án bị xuống dòng */
+}
+
+/* Màu sắc cho thẻ */
+.blue { 
+    color: #ffffff; 
+    background-color: #0056D6; /* Màu xanh đậm */
+}
+.green { 
+    color: #ffffff; 
+    background-color: #11AA22; /* Màu xanh lá đậm */
+}
+
+/* Hiệu ứng di chuột (Hover effect) */
+.project-list a:hover {
+    transform: translateY(-2px); /* Nhấc nhẹ lên */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
+
+.divider {
+    border-bottom: 2px dashed #D6E0E6; /* Màu nhạt hơn */
+    width: 80%;
+    margin: 30px auto;
+}
+
 /* ========================================================= */
+/* === CHI TIẾT DỰ ÁN (Detail Cards) ======================== */
+/* ========================================================= */
+.detail-section {
+    margin: 50px auto;
+    padding: 0; /* Loại bỏ padding ở đây, để dành cho .detail-body */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Bóng đổ nhẹ */
+    max-width: 800px; /* Giới hạn chiều rộng nội dung */
+}
 
+.detail-header {
+    background: #FFBC52; /* Màu cam nổi bật */
+    color: #1E2A78;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 20px;
+}
 
-        .blue { color: #0066FF; }
-        .green { color: #11CC22; }
-        .divider {
-            border-bottom: 2px dashed red;
-            width: 90%;
-            margin: 25px auto;
-        }
+.detail-body {
+    padding: 10px 40px 30px 40px; /* Thêm padding vào phần nội dung */
+}
 
-        /* Chi tiết dự án */
-        .detail-section {
-            margin-top: 80px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-        }
+.link-title {
+    color: #008000;
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: bold;
+    border-left: 4px solid #008000;
+    padding-left: 10px;
+}
 
-        .detail-header {
-            background: #FFBC52;
-            color: #0033A0;
-            font-size: 40px;
-            font-weight: bold;
-            padding: 10px;
-            text-align: center;
-        }
+.project-link {
+    font-size: 16px;
+    margin-left: 15px;
+    color: #0056D6;
+    display: block;
+    margin-top: 5px;
+    word-break: break-all; /* Ngắt từ dài để tránh tràn */
+}
 
-        .link-title {
-            color: #008000;
-            font-size: 22px;
-            margin-top: 20px;
-            font-weight: bold;
-        }
+.step-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 35px;
+    color: #1E2A78;
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
 
-        .project-link {
-            font-size: 20px;
-            margin-left: 30px;
-            color: #0056D6;
-            display: block;
-            margin-top: 5px;
-        }
-
-        .step-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin-top: 25px;
-        }
-
-        .back-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: green;
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 18px;
-        }
+/* ========================================================= */
+/* === NÚT VỀ ĐẦU TRANG ===================================== */
+/* ========================================================= */
+.back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #008000;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
     </style>
 </head>
 <body>
