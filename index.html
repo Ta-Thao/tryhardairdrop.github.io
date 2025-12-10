@@ -1,175 +1,515 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Tổng hợp Dự Án</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            padding: 20px;
-            margin: 0;
-        }
+    <meta charset="UTF-8">
+    <title>Tổng hợp Dự Án</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            padding: 20px;
+            margin: 0;
+        }
 
-        h1, h2 {
-            text-align: center;
-            color: #1E2A78;
-            margin-top: 40px;
-        }
+        h1, h2 {
+            text-align: center;
+            color: #1E2A78;
+            margin-top: 40px;
+        }
 
-        .project-list {
-            text-align: center;
-            margin-top: 30px;
-        }
+        .project-list {
+            text-align: center;
+            margin-top: 30px;
+        }
 
-        .project-list a {
-            text-decoration: none;
-            font-size: 30px;
-            margin: 25px;
-            display: inline-block;
-            font-weight: bold;
-        }
+        .project-list a {
+            text-decoration: none;
+            font-size: 30px;
+            margin: 25px;
+            display: inline-block;
+            font-weight: bold;
+        }
 
-        .blue { color: #0066FF; }
-        .green { color: #11CC22; }
-        .divider {
-            border-bottom: 2px dashed red;
-            width: 90%;
-            margin: 25px auto;
-        }
+        .blue { color: #0066FF; }
+        .green { color: #11CC22; }
+        .divider {
+            border-bottom: 2px dashed red;
+            width: 90%;
+            margin: 25px auto;
+        }
 
-        /* Chi tiết dự án */
-        .detail-section {
-            margin-top: 80px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-        }
+        /* Chi tiết dự án */
+        .detail-section {
+            margin-top: 80px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+        }
 
-        .detail-header {
-            background: #FFBC52;
-            color: #0033A0;
-            font-size: 40px;
-            font-weight: bold;
-            padding: 10px;
-            text-align: center;
-        }
+        .detail-header {
+            background: #FFBC52;
+            color: #0033A0;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+        }
 
-        .link-title {
-            color: #008000;
-            font-size: 22px;
-            margin-top: 20px;
-            font-weight: bold;
-        }
+        .link-title {
+            color: #008000;
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
 
-        .project-link {
-            font-size: 20px;
-            margin-left: 30px;
-            color: #0056D6;
-            display: block;
-            margin-top: 5px;
-        }
+        .project-link {
+            font-size: 20px;
+            margin-left: 30px;
+            color: #0056D6;
+            display: block;
+            margin-top: 5px;
+        }
 
-        .step-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin-top: 25px;
-        }
+        .step-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 25px;
+        }
 
-        .back-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: green;
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-    </style>
+        .back-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: green;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
 
-<!-- ============================= -->
-<!--        DANH SÁCH DỰ ÁN        -->
-<!-- ============================= -->
 <h1>CÁC DỰ ÁN</h1>
 
 <div class="divider"></div>
 
 <div class="project-list">
-    <a href="#pharos" class="blue">PHAROS</a>
-    <a href="#neura" class="blue">NEURA</a>
-    <a href="#arc" class="blue">ARC</a>
+    <a href="#pharos" class="blue">PHAROS</a>
+    <a href="#neura" class="blue">NEURA</a>
+    <a href="#arc" class="blue">ARC</a>
 
-    <br><br>
+    <br><br>
 
-    <a href="#rayls" class="blue">RAYLS</a>
-    <a href="#stable" class="blue">STABLE</a>
-    <a href="#miden" class="blue">MIDEN</a>
+    <a href="#rayls" class="blue">RAYLS</a>
+    <a href="#stable" class="blue">STABLE</a>
+    <a href="#miden" class="blue">MIDEN</a>
 </div>
 
 <div class="divider"></div>
 
 <div class="project-list">
-    <a href="#edgen" class="green">EDGEN</a>
-    <a href="#soso" class="green">SOSO</a>
-    <a href="#linera" class="green">LINERA</a>
+    <a href="#edgen" class="green">EDGEN</a>
+    <a href="#soso" class="green">SOSO</a>
+    <a href="#linera" class="green">LINERA</a>
 </div>
 
 <div class="divider"></div>
 
 <div class="project-list">
-    <a href="#rialo" class="blue">RIALO</a>
-    <a href="#ritual" class="blue">RITUAL</a>
+    <a href="#rialo" class="blue">RIALO</a>
+    <a href="#ritual" class="blue">RITUAL</a>
 </div>
 
 <a href="#" class="back-top">VỀ ĐẦU TRANG</a>
 
 
-<!-- ============================= -->
-<!--         CHI TIẾT NEURA        -->
-<!-- ============================= -->
-<div id="neura" class="detail-section">
-    <div class="detail-header">DỰ ÁN 2 — NEURA</div>
+<div id="pharos" class="detail-section">
+    <div class="detail-header">DỰ ÁN 1 — PHAROS</div>
 
-    <div class="link-title">Twitter</div>
-    <a class="project-link" href="https://x.com/Neura_io" target="_blank">
-        https://x.com/Neura_io
-    </a>
+    <div class="link-title">Website</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+    
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
 
-    <div class="link-title">Discord</div>
-    <a class="project-link" href="https://discord.com/invite/VrVZmw9EHe" target="_blank">
-        https://discord.com/invite/VrVZmw9EHe
-    </a>
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
 
-    <div class="link-title">Tele</div>
-    <a class="project-link" href="https://t.me/neuraofficial" target="_blank">
-        https://t.me/neuraofficial
-    </a>
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
 
-    <p style="margin-left:20px; color:#444;">Kết nối Twitter, Tele, Discord</p>
+    <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
 
-    <div class="step-title">BƯỚC 1 — TRANG HƯỚNG DẪN</div>
-    <a class="project-link" href="https://docs.neuraprotocol.io/" target="_blank">
-        https://docs.neuraprotocol.io/
-    </a>
+    <div class="step-title">BƯỚC 1 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
 
-    <div class="step-title">BƯỚC 2 — TRANG LEADERBOARD</div>
-    <a class="project-link" href="https://neuraverse.neuraprotocol.io/?section=leaderboard" target="_blank">
-        https://neuraverse.neuraprotocol.io/?section=leaderboard
-    </a>
+    <div class="step-title">BƯỚC 2 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
 
-    <div class="step-title">BƯỚC 3 — TRANG FAUCET</div>
-    <a class="project-link" href="https://neuraverse.neuraprotocol.io/faucet" target="_blank">
-        https://neuraverse.neuraprotocol.io/faucet
-    </a>
+    <div class="step-title">BƯỚC 3 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
 </div>
 
-<!-- ============================= -->
-<!--  (BẠN MUỐN MÌNH THÊM CÁC DỰ ÁN KHÁC?) -->
-<!-- ============================= -->
+
+<div id="neura" class="detail-section">
+    <div class="detail-header">DỰ ÁN 2 — NEURA</div>
+
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="https://x.com/Neura_io" target="_blank">
+        https://x.com/Neura_io
+    </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="https://discord.com/invite/VrVZmw9EHe" target="_blank">
+        https://discord.com/invite/VrVZmw9EHe
+    </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="https://t.me/neuraofficial" target="_blank">
+        https://t.me/neuraofficial
+    </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối Twitter, Tele, Discord</p>
+
+    <div class="step-title">BƯỚC 1 — TRANG HƯỚNG DẪN</div>
+    <a class="project-link" href="https://docs.neuraprotocol.io/" target="_blank">
+        https://docs.neuraprotocol.io/
+    </a>
+
+    <div class="step-title">BƯỚC 2 — TRANG LEADERBOARD</div>
+    <a class="project-link" href="https://neuraverse.neuraprotocol.io/?section=leaderboard" target="_blank">
+        https://neuraverse.neuraprotocol.io/?section=leaderboard
+    </a>
+
+    <div class="step-title">BƯỚC 3 — TRANG FAUCET</div>
+    <a class="project-link" href="https://neuraverse.neuraprotocol.io/faucet" target="_blank">
+        https://neuraverse.neuraprotocol.io/faucet
+    </a>
+</div>
+
+
+<div id="arc" class="detail-section">
+    <div class="detail-header">DỰ ÁN 3 — ARC</div>
+
+    <div class="link-title">Website</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+    
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
+
+    <div class="step-title">BƯỚC 1 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 2 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 3 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+</div>
+
+
+<div id="rayls" class="detail-section">
+    <div class="detail-header">DỰ ÁN 4 — RAYLS</div>
+
+    <div class="link-title">Website</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+    
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
+
+    <div class="step-title">BƯỚC 1 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 2 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 3 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+</div>
+
+
+<div id="stable" class="detail-section">
+    <div class="detail-header">DỰ ÁN 5 — STABLE</div>
+
+    <div class="link-title">Website</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+    
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
+
+    <div class="step-title">BƯỚC 1 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 2 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 3 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+</div>
+
+
+<div id="miden" class="detail-section">
+    <div class="detail-header">DỰ ÁN 6 — MIDEN</div>
+
+    <div class="link-title">Website</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+    
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
+
+    <div class="step-title">BƯỚC 1 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 2 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 3 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+</div>
+
+
+<div id="edgen" class="detail-section">
+    <div class="detail-header">DỰ ÁN 7 — EDGEN</div>
+
+    <div class="link-title">Website</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+    
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
+
+    <div class="step-title">BƯỚC 1 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 2 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 3 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+</div>
+
+
+<div id="soso" class="detail-section">
+    <div class="detail-header">DỰ ÁN 8 — SOSO</div>
+
+    <div class="link-title">Website</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+    
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
+
+    <div class="step-title">BƯỚC 1 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 2 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 3 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+</div>
+
+
+<div id="linera" class="detail-section">
+    <div class="detail-header">DỰ ÁN 9 — LINERA</div>
+
+    <div class="link-title">Website</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+    
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
+
+    <div class="step-title">BƯỚC 1 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 2 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+                    </a>
+
+    <div class="step-title">BƯỚC 3 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+</div>
+
+
+<div id="rialo" class="detail-section">
+    <div class="detail-header">DỰ ÁN 10 — RIALO</div>
+
+    <div class="link-title">Website</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+    
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
+
+    <div class="step-title">BƯỚC 1 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 2 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 3 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+</div>
+
+
+<div id="ritual" class="detail-section">
+    <div class="detail-header">DỰ ÁN 11 — RITUAL</div>
+
+    <div class="link-title">Website</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+    
+    <div class="link-title">Twitter</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Discord</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="link-title">Tele</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <p style="margin-left:20px; color:#444;">Kết nối các kênh xã hội</p>
+
+    <div class="step-title">BƯỚC 1 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 2 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+
+    <div class="step-title">BƯỚC 3 — (TÊN BƯỚC)</div>
+    <a class="project-link" href="" target="_blank">
+            </a>
+</div>
 
 </body>
 </html>
