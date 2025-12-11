@@ -135,3 +135,52 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
+
+/* ========================================================= */
+/* === ĐỊNH DẠNG BẢNG MỚI (Project Table) =================== */
+/* ========================================================= */
+.project-status-table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp các đường viền lại */
+    margin-top: 25px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.project-status-table th, 
+.project-status-table td {
+    border: 1px solid #ddd;
+    padding: 10px 5px;
+}
+
+.project-status-table th {
+    background-color: #1E2A78; /* Màu xanh đậm làm Header */
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Định dạng cho cột ACC (Số thứ tự tài khoản) */
+.project-status-table td:nth-child(1) {
+    font-weight: bold;
+    background-color: #f7f7f7;
+}
+
+/* Định dạng cột Check Mark (Đánh dấu) */
+.project-status-table .check-mark-col {
+    width: 50px; /* Giới hạn chiều rộng */
+    background-color: #e6f7ff; /* Nền xanh nhạt */
+}
+
+/* Định dạng cho cột IP/ACC trạng thái (để phân biệt màu sắc) */
+.status-red { background-color: #ffcccc; color: #cc0000; } /* Màu Đỏ */
+.status-yellow { background-color: #ffffcc; color: #8a6d3b; } /* Màu Vàng */
+.status-green { background-color: #ccffcc; color: #3c763d; } /* Màu Xanh Lá */
+
+/* Checkbox Style */
+.project-status-table input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    vertical-align: middle;
+}
